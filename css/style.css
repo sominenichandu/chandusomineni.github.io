@@ -37,7 +37,6 @@ section {
   padding: 100px 0;
   border-bottom: 1px solid #ddd;
   text-align: center;
-  font-size: 32px;
 }
 .about-section {
   position: relative;
@@ -219,7 +218,7 @@ h2 {
   font-size: 36px;
   margin-bottom: 40px;
   color: #000;
-  text-align: left;
+  text-align: center;
   margin-left: 20px;
 }
 
@@ -262,4 +261,69 @@ h2 {
 
 .project-item:hover {
   transform: translateY(-5px);
+}
+
+.contact-section {
+  padding: 100px 20px;
+  background: url("../Images/Image4.png") no-repeat center center/cover;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.contact-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 0;
+}
+
+.contact-section .container {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+}
+
+.contact-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #000;
+  text-align: center;
+  margin-left: 20px;
+}
+.contact-form .form-label {
+  font-weight: 500;
+  font-size: 25px;
+  font-family: "serif";
+  text-align: left;
+  display: block;
+}
+
+.contact-form .form-control {
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.contact-form button {
+  margin-top: 15px;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+.social-links img:hover {
+  transform: scale(1.2);
 }
