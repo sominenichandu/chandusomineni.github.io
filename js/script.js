@@ -25,4 +25,5 @@ document
     console.log("Email: ", email);
     console.log("Message: ", message);
     alert("✅ Message sent! Now waiting for pigeons to deliver it 📨");
+    document.querySelector(".contact-form").reset();
   });
