@@ -114,3 +114,79 @@ section {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: all 0.5s ease;
 }
+.skills-section {
+  position: relative;
+  background: url("../Images/Image1.png") no-repeat center center/cover;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.skills-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 0;
+}
+
+.skills-section .container {
+  position: relative;
+  z-index: 1;
+}
+.skills-title,
+.skills-section h3,
+h2 {
+  font-family: "Serif";
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.skills-section .section-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #000;
+}
+
+.skills-group {
+  margin-bottom: 50px;
+}
+
+.skills-subtitle {
+  font-size: 28px;
+  text-align: left;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.skill-item {
+  width: 120px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.skill-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.skill-item p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+}
+
+.skill-item:hover {
+  transform: scale(1.1);
+}
