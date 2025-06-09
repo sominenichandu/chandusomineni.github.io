@@ -39,3 +39,78 @@ section {
   text-align: center;
   font-size: 32px;
 }
+.about-section {
+  position: relative;
+  background: url("../Images/Image1.png") no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  z-index: 1;
+  overflow: hidden;
+}
+.about-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 0;
+}
+.about-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+.about-text h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.about-text p {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #333;
+}
+
+.highlight {
+  color: orange;
+}
+
+.about-image .profile-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.about-page-section {
+  padding: 100px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.about-page-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-page-section p {
+  font-size: 18px;
+  color: #555;
+}
+.about-info {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
