@@ -190,3 +190,76 @@ h2 {
 .skill-item:hover {
   transform: scale(1.1);
 }
+
+.works-section {
+  padding: 100px 20px;
+  background: url("../Images/Image1.png") no-repeat center center/cover;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.works-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 0;
+}
+
+.works-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.works-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #000;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.project-item {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex: 1 1 300px;
+  max-width: 650px;
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.project-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family: "Serif";
+}
+
+.project-item p {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-family: "Serif";
+  color: #060606e4;
+  line-height: 1.5;
+}
+
+.project-item a {
+  text-decoration: none;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+}
